@@ -1,0 +1,28 @@
+*{
+    margin: 0%;
+    padding: 1%;
+    box-sizing: border-box;
+    font-family: cursive
+}
+@import "var";
+
+@media only screen and (min-width:1240px){
+	.header{
+		font-size: 55px;
+		text-align: center;
+		color: blue;
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width:1239px){
+	.gridContainer{
+	display: grid;
+	grid-template-areas: 
+	"header header"
+	"main main"
+	"footer footer";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100px 1fr auto 400px;
+	background-color: yellow;
+    }
+}

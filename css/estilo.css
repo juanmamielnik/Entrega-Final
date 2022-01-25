@@ -1,0 +1,29 @@
+* {
+  margin: 0%;
+  padding: 1%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: cursive;
+}
+
+@media only screen and (min-width: 1240px) {
+  .header {
+    font-size: 55px;
+    text-align: center;
+    color: blue;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1239px) {
+  .gridContainer {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header header" "main main" "footer footer";
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 100px 1fr auto 400px;
+        grid-template-rows: 100px 1fr auto 400px;
+    background-color: yellow;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
